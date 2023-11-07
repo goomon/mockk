@@ -11,8 +11,7 @@ repositories {
 }
 
 dependencies {
-    testImplementation("io.kotest:kotest-property")
-    testImplementation("io.mockk:mockk")
+    testImplementation("io.mockk:mockk:1.13.8")
     testImplementation(kotlin("test"))
 }
 
@@ -21,7 +20,7 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(8)
+    jvmToolchain(11)
 }
 
 application {
